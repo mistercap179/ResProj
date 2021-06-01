@@ -19,15 +19,17 @@ public class WorkerProperty {
 	private int workerValue;
 	private DateTime timeStamp;
 
-	public WorkerProperty()
+	public WorkerProperty(CodeEnum codeEnum,int workervalues,DateTime time)
 	{
-		
+		this.code = codeEnum;
+		this.workerValue = workervalues;
+		this.timeStamp = time;
 	}
-
+	public WorkerProperty(){}
 	~WorkerProperty(){
 
 	}
-
+	
 	public CodeEnum Code { get => code; set => code = value; }
 	public int WorkerValue { get => workerValue; set => workerValue = value; }
 	public DateTime TimeStamp { get => timeStamp; set => timeStamp = value; }

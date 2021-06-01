@@ -24,10 +24,14 @@ public class CollectionDescription {
 	public int DataSet { get => dataSet; set => dataSet = value; }
 	public HistoricalCollection HistoricalCollection { get => historicalCollection; set => historicalCollection = value; }
 
-	public CollectionDescription(){
-
+	public CollectionDescription(int id,int dataSet,HistoricalCollection historicalC)
+	{
+		this.iD = id;
+		this.dataSet = dataSet;
+		this.historicalCollection = historicalC;
 	}
-
+	public CollectionDescription()
+	{ }
 	~CollectionDescription(){
 
 	}

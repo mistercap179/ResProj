@@ -23,12 +23,14 @@ public class Description {
 	public int Id { get => id; set => id = value; }
 	public List<Item> ListaItema { get => listaItema; set => listaItema = value; }
 
-	public Description(){
-
+	public Description(){}
+	public Description(int dataset,int id,List<Item> items)
+	{
+		this.dataSet = dataset;
+		this.id = id;
+		this.listaItema = items;
 	}
 
-	~Description(){
-
-	}
+	~Description(){}
 
 }//end Description

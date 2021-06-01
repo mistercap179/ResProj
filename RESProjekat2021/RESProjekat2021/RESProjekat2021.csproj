@@ -48,6 +48,7 @@
     <Compile Include="Class Model\HistoricalCollection.cs" />
     <Compile Include="Class Model\Item.cs" />
     <Compile Include="Class Model\ListaDescription.cs" />
+    <Compile Include="Class Model\PaljenjeGasenje.cs" />
     <Compile Include="Class Model\WorkerProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

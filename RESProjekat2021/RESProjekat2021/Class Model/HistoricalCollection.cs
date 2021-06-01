@@ -11,17 +11,19 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO;
 
-
-
 public class HistoricalCollection {
 
 	public List<WorkerProperty> listaWorkerPropertys;
 
-	public HistoricalCollection(){
-
+	public HistoricalCollection()
+	{
 	}
 
-	~HistoricalCollection(){
+	public HistoricalCollection(List<WorkerProperty> workers) {
+		this.listaWorkerPropertys = workers;
+	}
+
+	~HistoricalCollection() {
 
 	}
 

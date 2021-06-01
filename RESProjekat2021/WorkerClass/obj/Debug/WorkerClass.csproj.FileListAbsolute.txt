@@ -1,0 +1,16 @@
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\WorkerClass.dll.config
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\WorkerClass.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\WorkerClass.pdb
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\DataBase.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\EntityFramework.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\RESProjekat2021.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\DataBase.pdb
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\DataBase.dll.config
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\RESProjekat2021.pdb
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\EntityFramework.xml
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.csprojAssemblyReference.cache
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.csproj.CopyComplete
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.pdb
