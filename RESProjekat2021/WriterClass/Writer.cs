@@ -11,8 +11,13 @@ namespace WriterClass
 {
     public class Writer
     {
-        public PaljenjeGasenje paljenjeGasenje = new PaljenjeGasenje();        // ili u okviru while-a
-        public LoadBalancer LoadBalancer = new LoadBalancer();
+        public Writer()
+        {
+             LoadBalancer= new LoadBalancer();
+        }
+        //public PaljenjeGasenje paljenjeGasenje = new PaljenjeGasenje();        // ili u okviru while-a
+        public LoadBalancer LoadBalancer;// = new LoadBalancer(); 
+        
         public void Slanje()
         {
             int id = 0;
@@ -20,7 +25,7 @@ namespace WriterClass
             {
                 try
                 {
-                    int code = RandomBroj(1, 9);                // 9 jer ne uzima u obzir gornju granicu
+                    int code = RandomBroj(1, 3);                // 9 jer ne uzima u obzir gornju granicu
                     if(code == 2)                               // za digitalne
                     {
                         int value = RandomBroj(0, 2);
@@ -51,9 +56,45 @@ namespace WriterClass
             return random.Next(min, max);
         }
 
+        public void PaliGasiWorkera()
+        {
+            while (true)//slanje podataka ka Load Balanceru
+            {
+                Console.WriteLine("Sta zelite da radite?");
+                Console.WriteLine("1. Upali novi Worker.");
+                Console.WriteLine("2. Ugasi postojeci Worker.");
+                Console.Write("Vas odgovor: ");
+                int caseSwitch = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("==================================");
 
+                switch (caseSwitch)
+                {
+                    case 1:
+                        //UpaliWorker();
+                        UpaliWorkera();
+                        Console.WriteLine("==================================");
+                        break;
 
+                    case 2:
+                        //UgasiWorker();
+                        UgasiWorkera();
+                        Console.WriteLine("==================================");
+                        break;
+                }
+            }
+        }
 
+        public bool UpaliWorkera()
+        {
+            bool stanje = LoadBalancer.UpaliW();
+            return stanje;
+        }
+
+        public bool UgasiWorkera()
+        {
+            bool stanje = LoadBalancer.UgasiW();
+            return stanje;
+        }
 
     }
 }

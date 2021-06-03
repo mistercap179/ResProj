@@ -10,8 +10,10 @@ namespace WriterClass
     {
         static void Main(string[] args)
         {
+
             Writer writer = new Writer();
             writer.Slanje();
+            //writer.PaliGasiWorkera();
         }
     }
 }
