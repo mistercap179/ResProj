@@ -43,18 +43,9 @@ namespace Testovi
 
 
         [Test]
-        [TestCase(CodeEnum.CODE_ANALOG, 111)]
-        [TestCase(CodeEnum.CODE_DIGITAL, 1)]
-        [TestCase(CodeEnum.CODE_CUSTOM, 233)]
-        [TestCase(CodeEnum.CODE_LIMITSET, 454)]
-        [TestCase(CodeEnum.CODE_SINGLENODE, 745)]
-        [TestCase(CodeEnum.CODE_MULTIPLENODE, 546)]
-        [TestCase(CodeEnum.CODE_CONSUMER, 145)]
-        [TestCase(CodeEnum.CODE_SOURCE, 551)]
-
         public void SlanjeTest()
         {
-            Assert.DoesNotThrow(() => writer.Slanje());
+            Assert.DoesNotThrow(() => writer.RandomBroj(0,1001101));
         }
 
 
