@@ -7,7 +7,8 @@ C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\bin\Debug\RESProje
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\bin\Debug\RESProjekat2021.pdb
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\bin\Debug\EntityFramework.xml
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.csproj.CopyComplete
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.dll
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.pdb
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache

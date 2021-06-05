@@ -36,7 +36,7 @@ public class Item {
         {
             throw new ArgumentException("CODE_DIGITAL moze imati samo vrijednost 0 ili 1");
         }
-        if ((value < 0 || value > 100) && code != 2)
+        if ((value < 0 || value > 1000) && code != 2)
         {
             throw new ArgumentException("Vrijednost van opsega!");
         }

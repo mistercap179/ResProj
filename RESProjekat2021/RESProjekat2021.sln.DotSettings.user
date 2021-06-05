@@ -1,0 +1,9 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e6e07ca5_002De39b_002D4d75_002D879f_002Dcbb0ec4200f9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WriterKonstruktor" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.WriterTest.WriterKonstruktor&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.WriterTest.UpaliWorkeraTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.WriterTest.UgasiWorkeraTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.WriterTest.SlanjeTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

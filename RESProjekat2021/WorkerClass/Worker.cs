@@ -1,4 +1,5 @@
 ﻿using DataBase;
+using RESProjekat2021.Class_Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WorkerClass
 {
-    public class Worker
+    public class Worker : IWorker
     {
         public CollectionDescription[] DataSet1 { get; set; }
         public CollectionDescription[] DataSet2 { get; set; }
@@ -209,6 +210,10 @@ namespace WorkerClass
 
             return povratni;
         }
+
+
+
+
 
 
     }

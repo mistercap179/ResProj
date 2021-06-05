@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RESProjekat2021.Class_Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using WorkerClass;
 
 namespace LoadBalancerClass
 {
-    public class LoadBalancer
+    public class LoadBalancer : ILoadBalancer
     {
         public List<Description> listaDescriptiona = new List<Description>();
         public List<Item> privremenaListItema = new List<Item>();
@@ -75,7 +76,7 @@ namespace LoadBalancerClass
             {
                 i = 0;
             }
-            else if(workers.Count > i + 1)
+            if(workers.Count > i + 1)
             {
                 i++;
             }
