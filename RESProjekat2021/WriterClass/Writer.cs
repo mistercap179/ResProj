@@ -25,17 +25,20 @@ namespace WriterClass
             {
                 try
                 {
-                    int code = RandomBroj(1, 9);                // 9 jer ne uzima u obzir gornju granicu
-                    if(code == 2)                               // za digitalne
+                    int code = RandomCode();                // 9 jer ne uzima u obzir gornju granicu
+                    int value = RandomValue();
+
+                    if (code == 2 && (value != 0 && value != 1)) // za digitalne
                     {
-                        int value = RandomBroj(0, 2);
-                        LoadBalancer.PorukaOdWritera(id, code, value);//, paljenjeGasenje.upaljenWorker1, paljenjeGasenje.upaljenWorker2, paljenjeGasenje.upaljenWorker3, paljenjeGasenje.upaljenWorker4);
+                        throw new Exception("Code Digital mora imati vrijednost 0 ili 1!");
                     }
-                    else
+
+                    if (value < 0)
                     {
-                        int value = RandomBroj(0, 1001);         // ostali signali
-                        LoadBalancer.PorukaOdWritera(id, code, value);//, paljenjeGasenje.upaljenWorker1, paljenjeGasenje.upaljenWorker2, paljenjeGasenje.upaljenWorker3, paljenjeGasenje.upaljenWorker4);
+                        throw new Exception("Value nije validan!");
                     }
+
+                    LoadBalancer.PorukaOdWritera(id, code, value);//, paljenjeGasenje.upaljenWorker1, paljenjeGasenje.upaljenWorker2, paljenjeGasenje.upaljenWorker3, paljenjeGasenje.upaljenWorker4);
 
                     id++;
                     
@@ -50,10 +53,16 @@ namespace WriterClass
         }
 
 
-        public int RandomBroj(int min,int max)
+        public int RandomCode()
         {
             Random random = new Random();
-            return random.Next(min, max);
+            return random.Next(1, 9);
+        }
+
+        public int RandomValue()
+        {
+            Random random = new Random();
+            return random.Next(0, 1001);
         }
 
         public void PaliGasiWorkera() // thread 2

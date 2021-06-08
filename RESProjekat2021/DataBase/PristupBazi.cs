@@ -63,7 +63,7 @@ namespace DataBase
 
 
         //Konvertovanje iz Wroker Propertija u Property iz baze
-        private static DescriptionT ConvertWorkerPropertyToBase(WorkerProperty workerProperty)
+        public static DescriptionT ConvertWorkerPropertyToBase(WorkerProperty workerProperty)
         {
             return new DescriptionT
             {
@@ -75,7 +75,7 @@ namespace DataBase
         }
 
         //Konvertovanje iz property-ja iz baze u Worker property
-        private static WorkerProperty ConvertBPropertyToWorker(DescriptionT descriptionT)
+        public static WorkerProperty ConvertBPropertyToWorker(DescriptionT descriptionT)
         {
             return new WorkerProperty
             {
@@ -85,6 +85,8 @@ namespace DataBase
             };
         }
 
+
+       
 
 
 

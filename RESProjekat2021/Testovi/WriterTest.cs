@@ -24,11 +24,24 @@ namespace Testovi
 
 
         [Test]
-        public void WriterKonstruktor()
+        public void WriterKonstruktorTest()
         {
             Assert.AreNotEqual(writer,null);
         }
+        
 
+        [Test]
+        public void CodeTest()
+        {
+            Assert.DoesNotThrow(() => writer.RandomCode());
+        }
+
+        [Test]
+        public void ValueTest()
+        {
+            Assert.DoesNotThrow(() => writer.RandomValue());
+        }
+        
         [Test]
         public void UpaliWorkeraTest()
         {
@@ -40,21 +53,6 @@ namespace Testovi
         {
             Assert.IsTrue((writer.UgasiWorkera()));
         }
-
-
-        [Test]
-        public void SlanjeTest()
-        {
-            Assert.DoesNotThrow(() => writer.RandomBroj(0,1001101));
-        }
-
-
-
-
-
-
-
-
 
         [TearDown]
         public void TearDown()

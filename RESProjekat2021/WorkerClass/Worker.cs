@@ -3,6 +3,7 @@ using RESProjekat2021.Class_Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -174,40 +175,79 @@ namespace WorkerClass
         public CollectionDescription DeadBand(CollectionDescription cd)
         {
             CollectionDescription povratni = new CollectionDescription();
+            povratni.HistoricalCollection.listaWorkerPropertys = new List<WorkerProperty>();
 
-            List<WorkerProperty> workers = PristupBazi.GetWorkerProperties();  //iz baze
-
-            WorkerProperty wp1 = cd.HistoricalCollection.listaWorkerPropertys[0]; // nove 
-            WorkerProperty wp2 = cd.HistoricalCollection.listaWorkerPropertys[1];
-
-
-            foreach (WorkerProperty wp in workers)
+            try
             {
-                if(wp.Code == wp1.Code)
+                if (cd == null)
                 {
-                    if(wp1.WorkerValue > wp.WorkerValue * 1.02)
+                    throw new Exception();
+                }
+
+                povratni.DataSet = cd.DataSet;
+                povratni.ID = cd.ID;
+
+                List<WorkerProperty> workers = PristupBazi.GetWorkerProperties(); //iz baze
+
+                WorkerProperty wp1 = cd.HistoricalCollection.listaWorkerPropertys[0]; // nove 
+                WorkerProperty wp2 = cd.HistoricalCollection.listaWorkerPropertys[1];
+                int br = 0;
+
+                foreach (WorkerProperty wp in workers)
+                {
+                    if (wp.Code == wp1.Code)
                     {
-                        povratni.DataSet = cd.DataSet;
-                        povratni.ID = cd.ID;
-                        povratni.HistoricalCollection.listaWorkerPropertys.Add(wp1);
-                    }
-                    else
-                    {
-                        povratni.HistoricalCollection.listaWorkerPropertys.Add(wp);
-                    }
-                    if (wp2.WorkerValue > wp.WorkerValue * 1.02)
-                    {
-                        povratni.DataSet = cd.DataSet;
-                        povratni.ID = cd.ID;
-                        povratni.HistoricalCollection.listaWorkerPropertys.Add(wp2);
-                    }
-                    else
-                    {
-                        povratni.HistoricalCollection.listaWorkerPropertys.Add(wp);
+                        br++;
+                        if (wp1.WorkerValue > wp.WorkerValue * 1.02)
+                        {
+                            povratni.DataSet = cd.DataSet;
+                            povratni.ID = cd.ID;
+                            povratni.HistoricalCollection.listaWorkerPropertys.Add(wp1);
+                        }
+                        else
+                        {
+                            povratni.DataSet = cd.DataSet;
+                            povratni.ID = cd.ID;
+                            povratni.HistoricalCollection.listaWorkerPropertys.Add(wp);
+                        }
                     }
                 }
-            }
 
+                if (br == 0)
+                {
+                    povratni.HistoricalCollection.listaWorkerPropertys.Add(wp1);
+                }
+
+
+                br = 0;
+                foreach (WorkerProperty wp in workers)
+                {
+                    if(wp.Code == wp2.Code)
+                    {
+                        br++;
+                        if (wp2.WorkerValue > wp.WorkerValue * 1.02)
+                        { 
+                            povratni.DataSet = cd.DataSet;
+                            povratni.ID = cd.ID;
+                            povratni.HistoricalCollection.listaWorkerPropertys.Add(wp2);
+                        }
+                        else
+                        {
+                            povratni.DataSet = cd.DataSet;
+                            povratni.ID = cd.ID;
+                            povratni.HistoricalCollection.listaWorkerPropertys.Add(wp);
+                        }
+                    }
+                }
+                if (br == 0)
+                {
+                    povratni.HistoricalCollection.listaWorkerPropertys.Add(wp2);
+                }
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             return povratni;
         }
 

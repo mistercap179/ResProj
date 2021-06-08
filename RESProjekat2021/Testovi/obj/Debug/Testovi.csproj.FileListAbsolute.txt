@@ -31,3 +31,6 @@ C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\Castle.Co
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\Moq.xml
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\Testovi.dll.config
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\EntityFramework.SqlServer.xml

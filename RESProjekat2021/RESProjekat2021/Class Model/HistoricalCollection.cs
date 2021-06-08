@@ -13,18 +13,21 @@ using System.IO;
 
 public class HistoricalCollection {
 
-	public List<WorkerProperty> listaWorkerPropertys;
+	public List<WorkerProperty> listaWorkerPropertys { get; set; }
 
 	public HistoricalCollection()
-	{
+    {
+        this.listaWorkerPropertys = new List<WorkerProperty>();
+    }
+
+    public HistoricalCollection( List<WorkerProperty> lista)
+    {
+        this.listaWorkerPropertys = lista;
+    }
+
+    ~HistoricalCollection() {
+
 	}
 
-	public HistoricalCollection(List<WorkerProperty> workers) {
-		this.listaWorkerPropertys = workers;
-	}
-
-	~HistoricalCollection() {
-
-	}
 
 }//end HistoricalCollection
