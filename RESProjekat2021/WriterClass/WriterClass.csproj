@@ -70,6 +70,10 @@
       <Project>{fc32d8b4-9348-4de3-aae9-2989a6f09ffa}</Project>
       <Name>LoadBalancerClass</Name>
     </ProjectReference>
+    <ProjectReference Include="..\LoggerClass\LoggerClass.csproj">
+      <Project>{151ca443-c35f-4572-b856-10422b6c4324}</Project>
+      <Name>LoggerClass</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RESProjekat2021\RESProjekat2021.csproj">
       <Project>{AC328642-4285-4593-86D1-5F9AD18B2E6E}</Project>
       <Name>RESProjekat2021</Name>

@@ -1,0 +1,9 @@
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoggerClass\bin\Debug\LoggerClass.dll
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoggerClass\bin\Debug\LoggerClass.pdb
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoggerClass\bin\Debug\RESProjekat2021.dll
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoggerClass\bin\Debug\RESProjekat2021.pdb
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoggerClass\obj\Debug\LoggerClass.csproj.AssemblyReference.cache
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoggerClass\obj\Debug\LoggerClass.csproj.CoreCompileInputs.cache
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoggerClass\obj\Debug\LoggerClass.csproj.CopyComplete
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoggerClass\obj\Debug\LoggerClass.dll
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoggerClass\obj\Debug\LoggerClass.pdb

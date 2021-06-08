@@ -63,6 +63,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\LoggerClass\LoggerClass.csproj">
+      <Project>{151ca443-c35f-4572-b856-10422b6c4324}</Project>
+      <Name>LoggerClass</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RESProjekat2021\RESProjekat2021.csproj">
       <Project>{ac328642-4285-4593-86d1-5f9ad18b2e6e}</Project>
       <Name>RESProjekat2021</Name>

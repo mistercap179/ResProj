@@ -6,6 +6,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using LoggerClass;
+
 
 namespace WorkerClass
 {
@@ -16,6 +18,7 @@ namespace WorkerClass
         public CollectionDescription[] DataSet3 { get; set; }
         public CollectionDescription[] DataSet4 { get; set; }
 
+        public Logger Logger = new Logger();
 
         public Worker()
         {
@@ -131,6 +134,7 @@ namespace WorkerClass
                 collectionDescription1.HistoricalCollection.listaWorkerPropertys.Add(DataSet1[0].HistoricalCollection.listaWorkerPropertys[0]);
                 collectionDescription1.HistoricalCollection.listaWorkerPropertys.Add(DataSet1[1].HistoricalCollection.listaWorkerPropertys[0]);   
                 PristupBazi.UpdateDBperDataSet(DeadBand(collectionDescription1));
+                
             }
 
             else if(DataSet2[0] != null && DataSet2[1] != null)
@@ -144,6 +148,7 @@ namespace WorkerClass
                 collectionDescription2.HistoricalCollection.listaWorkerPropertys.Add(DataSet2[1].HistoricalCollection.listaWorkerPropertys[0]);
 
                 PristupBazi.UpdateDBperDataSet(DeadBand(collectionDescription2));
+               
             }
 
             else if (DataSet3[0] != null && DataSet3[1] != null)
@@ -156,6 +161,7 @@ namespace WorkerClass
                 collectionDescription3.HistoricalCollection.listaWorkerPropertys.Add(DataSet3[0].HistoricalCollection.listaWorkerPropertys[0]);
                 collectionDescription3.HistoricalCollection.listaWorkerPropertys.Add(DataSet3[1].HistoricalCollection.listaWorkerPropertys[0]);
                 PristupBazi.UpdateDBperDataSet(DeadBand(collectionDescription3));
+              
             }
 
             else if(DataSet4[0] != null && DataSet4[1] != null)
@@ -250,7 +256,28 @@ namespace WorkerClass
             }
             return povratni;
         }
-
+       // public void SlanjeReaderu(CollectionDescription cd) { }
+        public static CollectionDescription slanjeWorkeru(DateTime d1, DateTime d2, int id, int code)
+        {
+            int i = 1;
+            CollectionDescription povratniZaReadera = new CollectionDescription();
+            List<WorkerProperty> workers = PristupBazi.GetWorkerProperties();
+            foreach (WorkerProperty wp in workers)
+            {
+                if((int)wp.Code == code)
+                {
+                    if(wp.TimeStamp > d1 && wp.TimeStamp < d2)
+                    {
+                        povratniZaReadera.DataSet = ((int)(wp.Code) + 1) / 2;
+                        povratniZaReadera.HistoricalCollection.listaWorkerPropertys.Add(wp);
+                    }
+                }
+                i++;
+            }
+            Logger.PrimljeniPodaciZaReader(povratniZaReadera);
+            return povratniZaReadera;
+        }
+       
 
 
 
