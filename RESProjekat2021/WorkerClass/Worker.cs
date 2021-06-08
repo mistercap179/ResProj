@@ -130,10 +130,12 @@ namespace WorkerClass
                 collectionDescription1.HistoricalCollection.listaWorkerPropertys = new List<WorkerProperty>();
                 collectionDescription1.HistoricalCollection.listaWorkerPropertys.Add(DataSet1[0].HistoricalCollection.listaWorkerPropertys[0]);
                 collectionDescription1.HistoricalCollection.listaWorkerPropertys.Add(DataSet1[1].HistoricalCollection.listaWorkerPropertys[0]);   
-                PristupBazi.UpdateDBperDataSet(DeadBand(collectionDescription1));
+                PristupBazi.DodajUBazu(DeadBand(collectionDescription1));
+                DataSet1[0] = null;
+                DataSet1[1] = null;
             }
 
-            else if(DataSet2[0] != null && DataSet2[1] != null)
+            if(DataSet2[0] != null && DataSet2[1] != null)
             {
                 CollectionDescription collectionDescription2 = new CollectionDescription();
                 collectionDescription2.DataSet = DataSet2[0].DataSet;
@@ -143,10 +145,12 @@ namespace WorkerClass
                 collectionDescription2.HistoricalCollection.listaWorkerPropertys.Add(DataSet2[0].HistoricalCollection.listaWorkerPropertys[0]);
                 collectionDescription2.HistoricalCollection.listaWorkerPropertys.Add(DataSet2[1].HistoricalCollection.listaWorkerPropertys[0]);
 
-                PristupBazi.UpdateDBperDataSet(DeadBand(collectionDescription2));
+                PristupBazi.DodajUBazu(DeadBand(collectionDescription2));
+                DataSet2[0] = null;
+                DataSet2[1] = null;
             }
 
-            else if (DataSet3[0] != null && DataSet3[1] != null)
+             if (DataSet3[0] != null && DataSet3[1] != null)
             {
                 CollectionDescription collectionDescription3 = new CollectionDescription();
                 collectionDescription3.DataSet = DataSet3[0].DataSet;
@@ -155,10 +159,12 @@ namespace WorkerClass
                 collectionDescription3.HistoricalCollection.listaWorkerPropertys = new List<WorkerProperty>();
                 collectionDescription3.HistoricalCollection.listaWorkerPropertys.Add(DataSet3[0].HistoricalCollection.listaWorkerPropertys[0]);
                 collectionDescription3.HistoricalCollection.listaWorkerPropertys.Add(DataSet3[1].HistoricalCollection.listaWorkerPropertys[0]);
-                PristupBazi.UpdateDBperDataSet(DeadBand(collectionDescription3));
+                PristupBazi.DodajUBazu(DeadBand(collectionDescription3));
+                DataSet3[0] = null;
+                DataSet3[1] = null;
             }
-
-            else if(DataSet4[0] != null && DataSet4[1] != null)
+             
+             if(DataSet4[0] != null && DataSet4[1] != null)
             {
                 CollectionDescription collectionDescription4 = new CollectionDescription();
                 collectionDescription4.DataSet = DataSet4[0].DataSet;
@@ -167,7 +173,9 @@ namespace WorkerClass
                 collectionDescription4.HistoricalCollection.listaWorkerPropertys = new List<WorkerProperty>();
                 collectionDescription4.HistoricalCollection.listaWorkerPropertys.Add(DataSet4[0].HistoricalCollection.listaWorkerPropertys[0]);
                 collectionDescription4.HistoricalCollection.listaWorkerPropertys.Add(DataSet4[1].HistoricalCollection.listaWorkerPropertys[0]);
-                PristupBazi.UpdateDBperDataSet(DeadBand(collectionDescription4));
+                PristupBazi.DodajUBazu(DeadBand(collectionDescription4));
+                DataSet4[0] = null;
+                DataSet4[1] = null;
             }
         }
 
@@ -198,17 +206,20 @@ namespace WorkerClass
                     if (wp.Code == wp1.Code)
                     {
                         br++;
-                        if (wp1.WorkerValue > wp.WorkerValue * 1.02)
+
+                        if ((wp1.WorkerValue > PristupBazi.NadjiMaxPoCode((int)wp.Code) * 1.02) || wp1.Code == CodeEnum.CODE_DIGITAL)
                         {
                             povratni.DataSet = cd.DataSet;
                             povratni.ID = cd.ID;
                             povratni.HistoricalCollection.listaWorkerPropertys.Add(wp1);
+                            break;
                         }
                         else
                         {
                             povratni.DataSet = cd.DataSet;
                             povratni.ID = cd.ID;
                             povratni.HistoricalCollection.listaWorkerPropertys.Add(wp);
+                            break;
                         }
                     }
                 }
@@ -225,17 +236,19 @@ namespace WorkerClass
                     if(wp.Code == wp2.Code)
                     {
                         br++;
-                        if (wp2.WorkerValue > wp.WorkerValue * 1.02)
+                        if ((wp2.WorkerValue > PristupBazi.NadjiMaxPoCode((int)wp.Code) * 1.02)||wp2.Code==CodeEnum.CODE_DIGITAL)
                         { 
                             povratni.DataSet = cd.DataSet;
                             povratni.ID = cd.ID;
                             povratni.HistoricalCollection.listaWorkerPropertys.Add(wp2);
+                            break;
                         }
                         else
                         {
                             povratni.DataSet = cd.DataSet;
                             povratni.ID = cd.ID;
                             povratni.HistoricalCollection.listaWorkerPropertys.Add(wp);
+                            break;
                         }
                     }
                 }

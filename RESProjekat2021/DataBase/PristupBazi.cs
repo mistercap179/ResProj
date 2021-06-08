@@ -8,6 +8,53 @@ namespace DataBase
 {
     public class PristupBazi
     {
+
+        public static void  DodajUBazu(CollectionDescription cd)
+        {
+            using (var db = new DataBase())
+            {
+                WorkerProperty wp1 = cd.HistoricalCollection.listaWorkerPropertys[0];
+                WorkerProperty wp2 = cd.HistoricalCollection.listaWorkerPropertys[1];
+
+                var code1 = ConvertWorkerPropertyToBase(wp1);
+
+                var code2 = ConvertWorkerPropertyToBase(wp2);
+
+                var svi=db.DescriptionT.Where(x => x.Code == (int)wp1.Code);
+                int isti = svi.Where(x => x.Value == wp1.WorkerValue).Count();
+
+                if (isti == 0)
+                {
+                    db.DescriptionT.Add(code1);
+                    db.SaveChanges();
+                }
+
+                var svi2 = db.DescriptionT.Where(x => x.Code == (int)wp2.Code);
+                int isti2 = svi2.Where(x => x.Value == wp2.WorkerValue).Count();
+
+                if (isti2 == 0||wp2.Code==CodeEnum.CODE_DIGITAL)
+                {
+                    db.DescriptionT.Add(code2);
+                    db.SaveChanges();
+                }
+            }
+        }
+
+
+        public static int NadjiMaxPoCode(int code)
+        {
+            int povratni;
+            using (var db = new DataBase())
+            {
+
+
+                povratni = (int)db.DescriptionT.Where(x => x.Code == code).Max(x => x.Value);
+
+            }
+            return povratni;
+        }
+
+
         //Azuriranje baze prema DataSetu iz Descriptiona
         public static void UpdateDBperDataSet(CollectionDescription cdescription)
         {
@@ -23,7 +70,6 @@ namespace DataBase
 
 
                 code1 = ConvertWorkerPropertyToBase(wp1);
-
                 PristupBazi.UpdateWorkerProperty(code1, db);
                 db.SaveChanges();
 
@@ -48,6 +94,9 @@ namespace DataBase
             }
             return workerProperties;
         }
+
+        
+
 
         //dodavanje u bazu
         public static void UpdateWorkerProperty(DescriptionT descriptionT, DataBase baza)

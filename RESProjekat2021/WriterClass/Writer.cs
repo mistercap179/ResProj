@@ -25,10 +25,18 @@ namespace WriterClass
             {
                 try
                 {
-                    int code = RandomCode();                // 9 jer ne uzima u obzir gornju granicu
-                    int value = RandomValue();
+                    int code = RandomCode();
+                    int value ;
 
-                    if (code == 2 && (value != 0 && value != 1)) // za digitalne
+                    if (code == 2)
+                    {
+                        value = RandomValueDig();
+                    }                                           // 9 jer ne uzima u obzir gornju granicu
+                    else
+                    {
+                        value = RandomValue();
+                    }
+                    if (code ==  2 && (value != 0 && value != 1)) // za digitalne
                     {
                         throw new Exception("Code Digital mora imati vrijednost 0 ili 1!");
                     }
@@ -64,6 +72,14 @@ namespace WriterClass
             Random random = new Random();
             return random.Next(0, 1001);
         }
+
+        public int RandomValueDig()
+        {
+            Random random = new Random();
+            return random.Next(0, 2);
+        }
+
+
 
         public void PaliGasiWorkera() // thread 2
         {

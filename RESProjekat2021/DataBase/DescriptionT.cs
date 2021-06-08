@@ -9,18 +9,14 @@ namespace DataBase
     [Table("DescriptionT")]
     public partial class DescriptionT
     {
-        [Key]
-        [Column(Order = 0)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Code { get; set; }
 
         public int? Value { get; set; }
 
         public DateTime? TimeStamp { get; set; }
 
-        [Key]
-        [Column(Order = 1)]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int DataSet { get; set; }
+
+        public int ID { get; set; }
     }
 }

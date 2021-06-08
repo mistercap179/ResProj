@@ -7,7 +7,8 @@ namespace DataBase
 
     public partial class DataBase : DbContext
     {
-        public DataBase() : base("name=DataBase")
+        public DataBase()
+            : base("name=DataBase")
         {
         }
 

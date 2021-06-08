@@ -13,5 +13,4 @@ C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\bin\Debug\Entit
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.csproj.CopyComplete
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.dll
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.pdb
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.csproj.AssemblyReference.cache
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.csproj.CoreCompileInputs.cache
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WorkerClass\obj\Debug\WorkerClass.csprojAssemblyReference.cache

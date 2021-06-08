@@ -10,5 +10,4 @@ C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\bin\Debug\EntityFr
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.csproj.CopyComplete
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.dll
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.pdb
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.csproj.AssemblyReference.cache
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\DataBase\obj\Debug\DataBase.csprojAssemblyReference.cache
