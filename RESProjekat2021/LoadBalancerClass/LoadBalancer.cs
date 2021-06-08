@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WorkerClass;
+using LoggerClass;
 
 namespace LoadBalancerClass
 {
@@ -15,7 +16,7 @@ namespace LoadBalancerClass
 
         public List<Worker> workers = new List<Worker>() { new Worker(),new Worker()};
         public int i = 0;
-
+        public Logger Logger = new Logger();
         //public Worker worker = new Worker(); 
         public void PorukaOdWritera(int id,int code,int value)//,bool worker1,bool worker2,bool worker3,bool worker4)
         {
@@ -96,11 +97,13 @@ namespace LoadBalancerClass
 
                 workers.Add(new Worker());
                 Console.WriteLine("Upalili ste novog workera!");
+                Logger.UpaljenWorker(workers.Count);
                 return true;
             }
             else
             {
                 Console.WriteLine("Ne moze vise od 4 workera!");
+                Logger.NijeUpaljenWorker(workers.Count);
                 return false;
             }
         }
@@ -109,12 +112,14 @@ namespace LoadBalancerClass
             if(workers.Count == 1)
             {
                 Console.WriteLine("Poslednji worker se ne moze biti ugasen!");
+                Logger.NijeUgasenWorker(workers.Count);
                 return false;
             }
             else
             {
                 workers.RemoveAt(workers.Count - 1);
                 Console.WriteLine("Ugasili ste workera!");
+                Logger.UgasenWorker(workers.Count);
                 return true;
             }
 

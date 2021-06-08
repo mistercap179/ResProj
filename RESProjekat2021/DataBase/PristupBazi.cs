@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LoggerClass;
 
 namespace DataBase
 {
@@ -54,6 +55,7 @@ namespace DataBase
             return povratni;
         }
 
+        public Logger Logger = new Logger();
 
         //Azuriranje baze prema DataSetu iz Descriptiona
         public static void UpdateDBperDataSet(CollectionDescription cdescription)
@@ -77,6 +79,7 @@ namespace DataBase
                 code2 = ConvertWorkerPropertyToBase(wp2);
                 PristupBazi.UpdateWorkerProperty(code2, db);
                 db.SaveChanges();
+                
             }
         }
 
@@ -106,6 +109,7 @@ namespace DataBase
 
             baza.DescriptionT.Remove(dT);
             baza.DescriptionT.Add(descriptionT);
+            
         }
 
 

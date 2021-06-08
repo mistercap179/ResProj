@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using LoggerClass;
 
 namespace WriterClass
 {
@@ -14,10 +15,11 @@ namespace WriterClass
         public Writer()
         {
              LoadBalancer= new LoadBalancer();
+             Logger = new Logger();
         }
         //public PaljenjeGasenje paljenjeGasenje = new PaljenjeGasenje();        // ili u okviru while-a
         public LoadBalancer LoadBalancer;// = new LoadBalancer(); 
-        
+        public Logger Logger;
         public void Slanje() // thread 1
         {
             int id = 0;
@@ -47,7 +49,7 @@ namespace WriterClass
                     }
 
                     LoadBalancer.PorukaOdWritera(id, code, value);//, paljenjeGasenje.upaljenWorker1, paljenjeGasenje.upaljenWorker2, paljenjeGasenje.upaljenWorker3, paljenjeGasenje.upaljenWorker4);
-
+                    Logger.PorukaWritera(id, code, value);
                     id++;
                     
                     Thread.Sleep(2000);     // na svake dvije sekunde 
@@ -111,13 +113,15 @@ namespace WriterClass
 
         public bool UpaliWorkera()
         {
-            bool stanje = LoadBalancer.UpaliW();
+            Logger.UpaliWorkerZahtjev();
+            bool stanje = LoadBalancer.UpaliW();          
             return stanje;
         }
 
         public bool UgasiWorkera()
         {
-            bool stanje = LoadBalancer.UgasiW();
+            Logger.UgasiWorkerZahtjev();
+            bool stanje = LoadBalancer.UgasiW();          
             return stanje;
         }
 

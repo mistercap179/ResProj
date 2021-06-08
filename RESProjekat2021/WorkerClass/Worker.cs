@@ -6,6 +6,8 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using LoggerClass;
+
 
 namespace WorkerClass
 {
@@ -16,6 +18,7 @@ namespace WorkerClass
         public CollectionDescription[] DataSet3 { get; set; }
         public CollectionDescription[] DataSet4 { get; set; }
 
+        public Logger Logger = new Logger();
 
         public Worker()
         {
@@ -263,7 +266,28 @@ namespace WorkerClass
             }
             return povratni;
         }
-
+       // public void SlanjeReaderu(CollectionDescription cd) { }
+        public static CollectionDescription slanjeWorkeru(DateTime d1, DateTime d2, int id, int code)
+        {
+            int i = 1;
+            CollectionDescription povratniZaReadera = new CollectionDescription();
+            List<WorkerProperty> workers = PristupBazi.GetWorkerProperties();
+            foreach (WorkerProperty wp in workers)
+            {
+                if((int)wp.Code == code)
+                {
+                    if(wp.TimeStamp > d1 && wp.TimeStamp < d2)
+                    {
+                        povratniZaReadera.DataSet = ((int)(wp.Code) + 1) / 2;
+                        povratniZaReadera.HistoricalCollection.listaWorkerPropertys.Add(wp);
+                    }
+                }
+                i++;
+            }
+            Logger.PrimljeniPodaciZaReader(povratniZaReadera);
+            return povratniZaReadera;
+        }
+       
 
 
 
