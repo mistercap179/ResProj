@@ -78,7 +78,7 @@ namespace WriterClass
         public int RandomValueDig()
         {
             Random random = new Random();
-            return random.Next(0, 2);
+            return random.Next() % 2;
         }
 
 

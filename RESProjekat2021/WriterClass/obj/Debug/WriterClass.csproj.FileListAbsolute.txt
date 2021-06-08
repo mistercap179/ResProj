@@ -20,8 +20,6 @@ C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\obj\Debug\Write
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\obj\Debug\WriterClass.exe
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\obj\Debug\WriterClass.pdb
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\obj\Debug\WriterClass.csprojAssemblyReference.cache
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\obj\Debug\WriterClass.csproj.AssemblyReference.cache
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\obj\Debug\WriterClass.csproj.CoreCompileInputs.cache
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\WriterClass.exe.config
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\WriterClass.exe
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\WriterClass.pdb
@@ -47,3 +45,5 @@ C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\obj\Debug\W
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\obj\Debug\WriterClass.pdb
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\LoggerClass.dll
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\LoggerClass.pdb
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\LoggerClass.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\LoggerClass.pdb

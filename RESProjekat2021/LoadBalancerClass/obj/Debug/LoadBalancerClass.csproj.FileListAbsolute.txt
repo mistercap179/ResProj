@@ -17,8 +17,6 @@ C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\obj\Debug
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\obj\Debug\LoadBalancerClass.dll
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\obj\Debug\LoadBalancerClass.pdb
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\obj\Debug\LoadBalancerClass.csprojAssemblyReference.cache
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\obj\Debug\LoadBalancerClass.csproj.AssemblyReference.cache
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\obj\Debug\LoadBalancerClass.csproj.CoreCompileInputs.cache
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\bin\Debug\LoadBalancerClass.dll.config
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\bin\Debug\LoadBalancerClass.dll
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\bin\Debug\LoadBalancerClass.pdb
@@ -41,3 +39,5 @@ C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\obj\D
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\obj\Debug\LoadBalancerClass.pdb
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\bin\Debug\LoggerClass.dll
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\bin\Debug\LoggerClass.pdb
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\bin\Debug\LoggerClass.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\LoadBalancerClass\bin\Debug\LoggerClass.pdb

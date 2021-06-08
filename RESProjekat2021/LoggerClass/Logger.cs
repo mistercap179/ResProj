@@ -69,7 +69,7 @@ namespace LoggerClass
 
         public static void UpisiUFajl(string poruka)//ovde ga upisujem u korisnici.txt
         {
-            string putanja = "C:\\Users\\Sinisa\\Documents\\GitHub\\ResProj\\RESProjekat2021\\Logger\\Logger.txt";
+            string putanja = "Logger.txt";
             FileStream stream = new FileStream(putanja, FileMode.Append);
             StreamWriter sw = new StreamWriter(stream);
             sw.WriteLine(poruka);
