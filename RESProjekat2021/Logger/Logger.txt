@@ -1,0 +1,45 @@
+Writer je poslao sledece podatke LoadBalanceru: id-0, code:3, value:290
+Writer je poslao sledece podatke LoadBalanceru: id-1, code:5, value:608
+Writer je poslao sledece podatke LoadBalanceru: id-2, code:4, value:458
+Writer je poslao sledece podatke LoadBalanceru: id-3, code:6, value:672
+Writer je poslao sledece podatke LoadBalanceru: id-4, code:8, value:882
+Writer je poslao sledece podatke LoadBalanceru: id-0, code:3, value:286
+Writer je poslao sledece podatke LoadBalanceru: id-1, code:8, value:887
+Writer je poslao sledece podatke LoadBalanceru: id-2, code:6, value:737
+Writer salje LoadBalanceru zahtjev da upali workera.
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+Writer salje LoadBalanceru zahtjev da ugasi workera.
+LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
+Writer je poslao sledece podatke LoadBalanceru: id-3, code:5, value:588
+Writer salje LoadBalanceru zahtjev da upali workera.
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+Writer salje LoadBalanceru zahtjev da upali workera.
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 4
+Writer je poslao sledece podatke LoadBalanceru: id-4, code:7, value:797
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+Writer salje LoadBalanceru zahtjev da ugasi workera.
+LoadBalancer je ugasio worker-a i broj upaljenih workera je: 1
+Writer salje LoadBalanceru zahtjev da upali workera.
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+Writer je poslao sledece podatke LoadBalanceru: id-5, code:7, value:843
+Writer je poslao sledece podatke LoadBalanceru: id-6, code:1, value:4
+Writer je poslao sledece podatke LoadBalanceru: id-7, code:6, value:692
+Writer je poslao sledece podatke LoadBalanceru: id-8, code:8, value:901
+Writer je poslao sledece podatke LoadBalanceru: id-9, code:8, value:947
+Writer je poslao sledece podatke LoadBalanceru: id-10, code:5, value:515
+Writer je poslao sledece podatke LoadBalanceru: id-11, code:2, value:0
+Writer je poslao sledece podatke LoadBalanceru: id-12, code:2, value:0
+Writer je poslao sledece podatke LoadBalanceru: id-13, code:7, value:816
+Writer je poslao sledece podatke LoadBalanceru: id-14, code:5, value:503
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+Writer salje LoadBalanceru zahtjev da ugasi workera.
+LoadBalancer je ugasio worker-a i broj upaljenih workera je: 1
+Writer salje LoadBalanceru zahtjev da upali workera.
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3

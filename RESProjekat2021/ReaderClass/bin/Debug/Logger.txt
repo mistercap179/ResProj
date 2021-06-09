@@ -1,0 +1,2 @@
+Reader je poslao sledece podatke workeru: Vremenski interval od:29.5.2015. 05:50:06 do 9.6.2021. 21:50:06, broj workera: 3 code: 6
+Worker je poslao sledece podatke readeru: dataset: 3 code: CODE_MULTIPLENODE value: 692 timestamp: 9.6.2021. 20:36:57

@@ -145,42 +145,6 @@ namespace Testovi
         }
 
 
-        private static readonly object[] _ForDeadBand =
-        {
-            new object[] {
-                new CollectionDescription{ID= 1,DataSet = 3,HistoricalCollection = new HistoricalCollection(new List<WorkerProperty>{
-                    new WorkerProperty{Code = CodeEnum.CODE_SINGLENODE,TimeStamp=DateTime.Parse("9.9.1999."),WorkerValue = 188},
-                    new WorkerProperty{Code = CodeEnum.CODE_MULTIPLENODE,TimeStamp=DateTime.Parse("10.10.2010."),WorkerValue = 231}})
-                }
-            }
-        };
-
-        [Test]
-        [TestCaseSource("_ForDeadBand")]
-        public void DeadBandData(CollectionDescription cd)
-        {
-            CollectionDescription collectionDescription = new CollectionDescription();
-            collectionDescription.DataSet = 3;
-            collectionDescription.ID = 1;
-            collectionDescription.HistoricalCollection = new HistoricalCollection();
-            collectionDescription.HistoricalCollection.listaWorkerPropertys = new List<WorkerProperty>();
-            collectionDescription.HistoricalCollection.listaWorkerPropertys.Add(new WorkerProperty{Code = CodeEnum.CODE_SINGLENODE, TimeStamp = DateTime.Parse("9.9.1999."), WorkerValue = 188});
-            collectionDescription.HistoricalCollection.listaWorkerPropertys.Add(new WorkerProperty { Code = CodeEnum.CODE_MULTIPLENODE, TimeStamp = DateTime.Parse("10.10.2010."), WorkerValue = 231 });
-            
-            bool equal = true;
-            CollectionDescription cdb = worker.DeadBand(cd);
-            equal &= collectionDescription.DataSet == cdb.DataSet;
-            for (int i = 0; i < 2; i++)
-            {
-                equal = collectionDescription.HistoricalCollection.listaWorkerPropertys[i].Code == cdb.HistoricalCollection.listaWorkerPropertys[i].Code;
-                equal &= collectionDescription.HistoricalCollection.listaWorkerPropertys[i].WorkerValue == cdb.HistoricalCollection.listaWorkerPropertys[i].WorkerValue;
-            }
-            Assert.IsTrue(equal);
-
-        }
-
-        
-
         [TearDown]
         public void TearDown()
         {

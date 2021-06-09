@@ -18,8 +18,6 @@ C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\WriterCla
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\WriterClass.exe.config
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\nunit.framework.xml
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\EntityFramework.xml
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.csproj.AssemblyReference.cache
-C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.csproj.CoreCompileInputs.cache
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.csproj.CopyComplete
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.dll
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.pdb
@@ -72,3 +70,7 @@ C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testo
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.pdb
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\LoggerClass.dll
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\LoggerClass.pdb
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\LoggerClass.dll
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\LoggerClass.pdb
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.csproj.AssemblyReference.cache
+C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.csproj.CoreCompileInputs.cache

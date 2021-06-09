@@ -28,7 +28,13 @@ namespace Testovi
         {
             Assert.AreNotEqual(writer,null);
         }
-        
+
+        [Test]
+        public void CodeTestDig()
+        {
+            Assert.DoesNotThrow(() => writer.RandomValueDig());
+        }
+
 
         [Test]
         public void CodeTest()
