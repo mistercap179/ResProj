@@ -74,6 +74,10 @@
       <Project>{151ca443-c35f-4572-b856-10422b6c4324}</Project>
       <Name>LoggerClass</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ReaderClass\ReaderClass.csproj">
+      <Project>{d8599a4e-7780-49f4-a75c-e7e2213d722d}</Project>
+      <Name>ReaderClass</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RESProjekat2021\RESProjekat2021.csproj">
       <Project>{AC328642-4285-4593-86D1-5F9AD18B2E6E}</Project>
       <Name>RESProjekat2021</Name>

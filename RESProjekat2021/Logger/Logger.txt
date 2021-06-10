@@ -1,45 +1,120 @@
-Writer je poslao sledece podatke LoadBalanceru: id-0, code:3, value:290
-Writer je poslao sledece podatke LoadBalanceru: id-1, code:5, value:608
-Writer je poslao sledece podatke LoadBalanceru: id-2, code:4, value:458
-Writer je poslao sledece podatke LoadBalanceru: id-3, code:6, value:672
-Writer je poslao sledece podatke LoadBalanceru: id-4, code:8, value:882
-Writer je poslao sledece podatke LoadBalanceru: id-0, code:3, value:286
-Writer je poslao sledece podatke LoadBalanceru: id-1, code:8, value:887
-Writer je poslao sledece podatke LoadBalanceru: id-2, code:6, value:737
-Writer salje LoadBalanceru zahtjev da upali workera.
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+
+Writer je poslao sledece podatke LoadBalanceru: id-0, code:8, value:877
+
 Writer salje LoadBalanceru zahtjev da ugasi workera.
-LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
-Writer je poslao sledece podatke LoadBalanceru: id-3, code:5, value:588
-Writer salje LoadBalanceru zahtjev da upali workera.
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
-Writer salje LoadBalanceru zahtjev da upali workera.
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 4
-Writer je poslao sledece podatke LoadBalanceru: id-4, code:7, value:797
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
-LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
-Writer salje LoadBalanceru zahtjev da ugasi workera.
+
 LoadBalancer je ugasio worker-a i broj upaljenih workera je: 1
-Writer salje LoadBalanceru zahtjev da upali workera.
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
-Writer je poslao sledece podatke LoadBalanceru: id-5, code:7, value:843
-Writer je poslao sledece podatke LoadBalanceru: id-6, code:1, value:4
-Writer je poslao sledece podatke LoadBalanceru: id-7, code:6, value:692
-Writer je poslao sledece podatke LoadBalanceru: id-8, code:8, value:901
-Writer je poslao sledece podatke LoadBalanceru: id-9, code:8, value:947
-Writer je poslao sledece podatke LoadBalanceru: id-10, code:5, value:515
-Writer je poslao sledece podatke LoadBalanceru: id-11, code:2, value:0
-Writer je poslao sledece podatke LoadBalanceru: id-12, code:2, value:0
-Writer je poslao sledece podatke LoadBalanceru: id-13, code:7, value:816
-Writer je poslao sledece podatke LoadBalanceru: id-14, code:5, value:503
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
-LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
-LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
-LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+
+Writer je poslao sledece podatke LoadBalanceru: id-1, code:4, value:477
+
+Writer je poslao sledece podatke LoadBalanceru: id-2, code:6, value:686
+
+Upisani podaci u bazu [DataSet3]. 
+Kod prvog upisanog: CODE_SINGLENODE   Vrijednost prvog upisanog: 537 
+Kod drugog upisanog: CODE_MULTIPLENODE   Vrijednost drugog upisanog: 686
+
+Writer je poslao sledece podatke LoadBalanceru: id-3, code:5, value:537
+
+Writer je poslao sledece podatke LoadBalanceru: id-0, code:5, value:526
+
 Writer salje LoadBalanceru zahtjev da ugasi workera.
+
 LoadBalancer je ugasio worker-a i broj upaljenih workera je: 1
-Writer salje LoadBalanceru zahtjev da upali workera.
+
+Writer je poslao sledece podatke LoadBalanceru: id-1, code:1, value:69
+
+Writer je poslao sledece podatke LoadBalanceru: id-2, code:3, value:279
+
+Writer je poslao sledece podatke LoadBalanceru: id-3, code:2, value:1
+
+Upisani podaci u bazu [DataSet1]. 
+Kod prvog upisanog: CODE_ANALOG   Vrijednost prvog upisanog: 69 
+Kod drugog upisanog: CODE_DIGITAL   Vrijednost drugog upisanog: 1
+
+Writer je poslao sledece podatke LoadBalanceru: id-4, code:5, value:542
+
+Writer je poslao sledece podatke LoadBalanceru: id-5, code:4, value:393
+
+Upisani podaci u bazu [DataSet2]. 
+Kod prvog upisanog: CODE_CUSTOM   Vrijednost prvog upisanog: 279 
+Kod drugog upisanog: CODE_LIMITSET   Vrijednost drugog upisanog: 393
+
+Writer je poslao sledece podatke LoadBalanceru: id-6, code:5, value:602
+
+Worker je poslao sledece podatke readeru: dataset: 2 code: CODE_CUSTOM value: 295 timestamp: 6/10/2021 1:18:35 AM
+
+Writer je poslao sledece podatke LoadBalanceru: id-0, code:1, value:123
+
+Writer je poslao sledece podatke LoadBalanceru: id-1, code:2, value:0
+
+Writer je poslao sledece podatke LoadBalanceru: id-2, code:3, value:316
+
+Writer je poslao sledece podatke LoadBalanceru: id-3, code:4, value:655
+
+Writer je poslao sledece podatke LoadBalanceru: id-4, code:5, value:128
+
+Writer je poslao sledece podatke LoadBalanceru: id-5, code:6, value:543
+
+Writer je poslao sledece podatke LoadBalanceru: id-6, code:7, value:136
+
+Writer je poslao sledece podatke LoadBalanceru: id-7, code:8, value:777
+
 LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+
+LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
+
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 3
+
+LoadBalancer nije uspio ugasiti worker-a i broj upaljenih workera je: 1
+
+LoadBalancer nije uspio upaliti worker-a i broj upaljenih workera je: 4
+
+Writer je poslao sledece podatke LoadBalanceru: id-1, code:3, value:321
+
+Reader je poslao sledece podatke workeru: Vremenski interval od:1/1/2021 12:00:00 AM do 11/13/2021 12:00:00 AMIspisati podatke za Kod: 1
+
+Worker je poslao sledece podatke readeru: dataset: 1 code: CODE_ANALOG value: 200 timestamp: 6/10/2021 10:43:13 AM
+
+LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
+
+Writer salje LoadBalanceru zahtjev da ugasi workera.
+
+Writer salje LoadBalanceru zahtjev da upali workera.
+
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 2
+
+Upisani podaci u bazu [DataSet2]. 
+Kod prvog upisanog: CODE_CUSTOM   Vrijednost prvog upisanog: 221 
+Kod drugog upisanog: CODE_LIMITSET   Vrijednost drugog upisanog: 220
+
+LoadBalancer nije uspio ugasiti worker-a i broj upaljenih workera je: 1
+
+LoadBalancer nije uspio upaliti worker-a i broj upaljenih workera je: 4
+
+Writer je poslao sledece podatke LoadBalanceru: id-1, code:3, value:321
+
+Reader je poslao sledece podatke workeru: Vremenski interval od:1/1/2021 12:00:00 AM do 11/13/2021 12:00:00 AMIspisati podatke za Kod: 1
+
+Worker je poslao sledece podatke readeru: dataset: 1 code: CODE_ANALOG value: 200 timestamp: 6/10/2021 10:43:27 AM
+
+LoadBalancer je ugasio worker-a i broj upaljenih workera je: 2
+
+Writer salje LoadBalanceru zahtjev da ugasi workera.
+
+Writer salje LoadBalanceru zahtjev da upali workera.
+
+LoadBalancer je upalio worker-a i broj upaljenih workera je: 2
+
+Upisani podaci u bazu [DataSet2]. 
+Kod prvog upisanog: CODE_CUSTOM   Vrijednost prvog upisanog: 221 
+Kod drugog upisanog: CODE_LIMITSET   Vrijednost drugog upisanog: 220
+
+Reader je poslao sledece podatke workeru: Vremenski interval od:1/1/2021 12:00:00 AM do 11/11/2021 12:00:00 AMIspisati podatke za Kod: 3
+
+Worker je poslao sledece podatke readeru: dataset: 2 code: CODE_CUSTOM value: 295 timestamp: 6/10/2021 1:18:35 AM
+
+Reader je poslao sledece podatke workeru: Vremenski interval od:1/1/2021 12:00:00 AM do 11/13/2021 12:00:00 AMIspisati podatke za Kod: 1
+
+Worker je poslao sledece podatke readeru: dataset: 1 code: CODE_ANALOG value: 40 timestamp: 6/10/2021 1:01:43 AM
+
+Worker je poslao sledece podatke readeru: dataset: 1 code: CODE_ANALOG value: 40 timestamp: 6/10/2021 1:01:43 AM

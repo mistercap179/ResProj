@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using RESProjekat2021.Class_Model;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,71 +8,130 @@ using System.IO;
 
 namespace LoggerClass
 {
-    public class Logger
+    public class Logger : ILogger
     {
-        public void PorukaWritera(int id, int code, int value)
+        public bool PorukaWritera(int id, int code, int value)
         {
-            string s = "Writer je poslao sledece podatke LoadBalanceru: id-" + id + ", code:" + code + ", value:" + value;
+            string s = ""; 
+            s = "\nWriter je poslao sledece podatke LoadBalanceru: id-" + id + ", code:" + code + ", value:" + value;
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
 
-        public static void PoslatiPodaciZaReader(DateTime d1, DateTime d2,int code, int worker)
+        public bool PoslatiPodaciZaReader(DateTime d1, DateTime d2,int code)
         {
-            string s = "Reader je poslao sledece podatke workeru: Vremenski interval od:" + d1.ToString() + " do " + d2.ToString() + ", broj workera: " + worker + " code: " + code;
+            string s = "";
+            s = "\nReader je poslao sledece podatke workeru: Vremenski interval od:" + d1.ToString() + " do " + d2.ToString() + "Ispisati podatke za Kod: " + code;
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
 
-        public static void PrimljeniPodaciZaReader(CollectionDescription cd)
+        public bool PrimljeniPodaciZaReader(CollectionDescription cd)
         {
-            string s = "Worker je poslao sledece podatke readeru: dataset: " + cd.DataSet + " code: " + cd.HistoricalCollection.listaWorkerPropertys[0].Code + " value: " + cd.HistoricalCollection.listaWorkerPropertys[0].WorkerValue + " timestamp: " + cd.HistoricalCollection.listaWorkerPropertys[0].TimeStamp;
+            string s = "";
+            s = "\nWorker je poslao sledece podatke readeru: dataset: " + cd.DataSet + " code: " + cd.HistoricalCollection.listaWorkerPropertys[0].Code + " value: " + cd.HistoricalCollection.listaWorkerPropertys[0].WorkerValue + " timestamp: " + cd.HistoricalCollection.listaWorkerPropertys[0].TimeStamp;
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
 
-        public void UgasiWorkerZahtjev()
+        public bool UgasiWorkerZahtjev()
         {
-            string s = "Writer salje LoadBalanceru zahtjev da ugasi workera.";
+            string s = "";
+            s = "\nWriter salje LoadBalanceru zahtjev da ugasi workera.";
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
-        public void UpaljenWorker(int i)
+        public bool UpaljenWorker(int i)
         {
-            string s = "LoadBalancer je upalio worker-a i broj upaljenih workera je: " + i;
+            string s = "";
+            s = "\nLoadBalancer je upalio worker-a i broj upaljenih workera je: " + i;
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
-        public void NijeUpaljenWorker(int i)
+        public bool NijeUpaljenWorker(int i)
         {
-            string s = "LoadBalancer nije uspio upaliti worker-a i broj upaljenih workera je: " + i;
+            string s = "";
+            s = "\nLoadBalancer nije uspio upaliti worker-a i broj upaljenih workera je: " + i;
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
-        public void NijeUgasenWorker(int i)
+        public bool NijeUgasenWorker(int i)
         {
-            string s = "LoadBalancer nije uspio ugasiti worker-a i broj upaljenih workera je: " + i;
+            string s = ""; 
+            s = "\nLoadBalancer nije uspio ugasiti worker-a i broj upaljenih workera je: " + i;
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
-        public void UgasenWorker(int i)
+        public bool UgasenWorker(int i)
         {
-            string s = "LoadBalancer je ugasio worker-a i broj upaljenih workera je: " + i;
+            string s = ""; s = "\nLoadBalancer je ugasio worker-a i broj upaljenih workera je: " + i;
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
 
-        public void UpaliWorkerZahtjev()
+        public bool UpaliWorkerZahtjev()
         {
-            string s = "Writer salje LoadBalanceru zahtjev da upali workera.";
+            string s = "";
+            s = "\nWriter salje LoadBalanceru zahtjev da upali workera.";
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
 
-        public static void UpisUBazu(int dataset, CodeEnum code, int value)
+        public bool UpisUBazu(int dataset, CodeEnum code, CodeEnum code1, int value, int value1)
         {
-            string s = "Upisani podaci u bazu [DataSet" + dataset + "]. ";
+            string s = "";
+            s = "\nUpisani podaci u bazu [DataSet" + dataset + "]. \nKod prvog upisanog: " + code + "   Vrijednost prvog upisanog: " + value + " \nKod drugog upisanog: " + code1 + "   Vrijednost drugog upisanog: " + value1 ;
+            if (s == "")
+            {
+                return false;
+            }
             UpisiUFajl(s);
+            return true;
         }
 
         
 
-        public static void UpisiUFajl(string poruka)//ovde ga upisujem u korisnici.txt
+        public void UpisiUFajl(string poruka)//upis u fajl
         {
-            string putanja = "C:\\Users\\AB\\Documents\\GitHub\\ResProj\\RESProjekat2021\\Logger\\Logger.txt";
+            string putanja = "C:\\Users\\Sinisa\\Documents\\GitHub\\ResProj\\RESProjekat2021\\Logger\\Logger.txt";
             FileStream stream = new FileStream(putanja, FileMode.Append);
-            StreamWriter sw = new StreamWriter(stream);
+            StreamWriter sw = new StreamWriter(stream); 
             sw.WriteLine(poruka);
             sw.Close();
             stream.Close();

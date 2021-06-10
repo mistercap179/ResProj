@@ -2,12 +2,41 @@
 	
 	
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9b67a1be_002D628e_002D4a87_002Db6e8_002D27046319e5d9/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="True" ContinuousTestingMode="3" IsActive="True" Name="PorukaOdLoadBalanceraTest3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9b67a1be_002D628e_002D4a87_002Db6e8_002D27046319e5d9/@EntryIndexedValue">&lt;SessionState ContinuousTestingIsOn="True" ContinuousTestingMode="3" Name="PorukaOdLoadBalanceraTest3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.WorkerTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.DataBaseTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoadBalancerTest&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.WriterTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a0572104_002D2f77_002D49c3_002Db299_002D61f9bed27279/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PorukaZaWorkeraTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.ReaderTest.PorukaZaWorkeraTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b31e59ed_002D287e_002D456d_002Db2dc_002D442acfcac2f8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PorukaZaWorkeraTest #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.ReaderTest.PorukaZaWorkeraTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=fee4cb2f_002D0a35_002D4420_002D9296_002D8fe196f0d60e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PorukaZaWorkeraTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.ReaderTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoggerTest.PorukaWriteraTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoggerTest.PoslatiPodaciZaReaderaTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoggerTest.PrimljeniPodaciZaReaderTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoggerTest.UgasiWorkerZahtjevTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoggerTest.UpaliWorkerZahtjevTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoggerTest.UgasenWorkerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoggerTest.UpaljenWorkerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoggerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.WorkerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.LoadBalancerTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::4F6AB6A3-6120-4976-88F0-5CE868FC8C54::.NETFramework,Version=v4.7.2::Testovi.DataBaseTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	

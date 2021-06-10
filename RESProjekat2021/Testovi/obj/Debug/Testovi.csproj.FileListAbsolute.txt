@@ -74,3 +74,6 @@ C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\LoggerCla
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\LoggerClass.pdb
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.csproj.AssemblyReference.cache
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\Testovi\obj\Debug\Testovi.csproj.CoreCompileInputs.cache
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\ReaderClass.exe
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\ReaderClass.pdb
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\Testovi\bin\Debug\ReaderClass.exe.config

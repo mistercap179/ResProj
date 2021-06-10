@@ -20,6 +20,7 @@ namespace LoadBalancerClass
         //public Worker worker = new Worker(); 
         public void PorukaOdWritera(int id,int code,int value)//,bool worker1,bool worker2,bool worker3,bool worker4)
         {
+            Logger.PorukaWritera(id, code, value);
             Item item = new Item(code,value);                                           //writer item
             privremenaListItema.Add(item);                                                                      
 

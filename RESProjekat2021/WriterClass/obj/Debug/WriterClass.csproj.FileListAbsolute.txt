@@ -47,3 +47,6 @@ C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\L
 C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\LoggerClass.pdb
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\LoggerClass.dll
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\LoggerClass.pdb
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\ReaderClass.exe
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\ReaderClass.pdb
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\WriterClass\bin\Debug\ReaderClass.exe.config

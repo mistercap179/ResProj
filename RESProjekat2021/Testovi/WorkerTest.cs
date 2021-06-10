@@ -144,6 +144,13 @@ namespace Testovi
             });
         }
 
+       [Test]
+        [TestCase("1/1/2021 00:00:00", "11/11/2021 00:00:00", 3)]
+        public void slanjeWorkeruTest(DateTime d1, DateTime d2, int code)
+        {
+            Assert.DoesNotThrow(() => worker.slanjeWorkeru(d1, d2, code));
+        }
+
 
         [TearDown]
         public void TearDown()

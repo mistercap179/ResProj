@@ -47,6 +47,8 @@
     <Compile Include="Class Model\Description.cs" />
     <Compile Include="Class Model\HistoricalCollection.cs" />
     <Compile Include="Class Model\ILoadBalancer.cs" />
+    <Compile Include="Class Model\ILogger.cs" />
+    <Compile Include="Class Model\IReader.cs" />
     <Compile Include="Class Model\Item.cs" />
     <Compile Include="Class Model\IWorker.cs" />
     <Compile Include="Class Model\IWriter.cs" />

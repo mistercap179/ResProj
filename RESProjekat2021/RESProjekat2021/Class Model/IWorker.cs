@@ -14,5 +14,7 @@ namespace RESProjekat2021.Class_Model
 
         CollectionDescription DeadBand(CollectionDescription cd);
 
+      // CollectionDescription slanjeWorkeru(DateTime d1, DateTime d2, int code);
+
     }
 }

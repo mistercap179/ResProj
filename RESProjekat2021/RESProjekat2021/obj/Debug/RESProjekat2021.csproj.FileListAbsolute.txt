@@ -3,3 +3,9 @@ C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\bin\Debug\R
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\obj\Debug\RESProjekat2021.dll
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\obj\Debug\RESProjekat2021.pdb
 C:\Users\AB\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\obj\Debug\RESProjekat2021.csprojAssemblyReference.cache
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\bin\Debug\RESProjekat2021.dll
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\bin\Debug\RESProjekat2021.pdb
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\obj\Debug\RESProjekat2021.csproj.AssemblyReference.cache
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\obj\Debug\RESProjekat2021.csproj.CoreCompileInputs.cache
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\obj\Debug\RESProjekat2021.dll
+C:\Users\Sinisa\Documents\GitHub\ResProj\RESProjekat2021\RESProjekat2021\obj\Debug\RESProjekat2021.pdb

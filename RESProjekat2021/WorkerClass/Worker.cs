@@ -134,6 +134,7 @@ namespace WorkerClass
                 collectionDescription1.HistoricalCollection.listaWorkerPropertys.Add(DataSet1[0].HistoricalCollection.listaWorkerPropertys[0]);
                 collectionDescription1.HistoricalCollection.listaWorkerPropertys.Add(DataSet1[1].HistoricalCollection.listaWorkerPropertys[0]);   
                 PristupBazi.DodajUBazu(DeadBand(collectionDescription1));
+                Logger.UpisUBazu(collectionDescription1.DataSet, collectionDescription1.HistoricalCollection.listaWorkerPropertys[0].Code, collectionDescription1.HistoricalCollection.listaWorkerPropertys[1].Code, collectionDescription1.HistoricalCollection.listaWorkerPropertys[0].WorkerValue, collectionDescription1.HistoricalCollection.listaWorkerPropertys[1].WorkerValue);
                 DataSet1[0] = null;
                 DataSet1[1] = null;
             }
@@ -149,6 +150,7 @@ namespace WorkerClass
                 collectionDescription2.HistoricalCollection.listaWorkerPropertys.Add(DataSet2[1].HistoricalCollection.listaWorkerPropertys[0]);
 
                 PristupBazi.DodajUBazu(DeadBand(collectionDescription2));
+                Logger.UpisUBazu(collectionDescription2.DataSet, collectionDescription2.HistoricalCollection.listaWorkerPropertys[0].Code, collectionDescription2.HistoricalCollection.listaWorkerPropertys[1].Code, collectionDescription2.HistoricalCollection.listaWorkerPropertys[0].WorkerValue, collectionDescription2.HistoricalCollection.listaWorkerPropertys[1].WorkerValue);
                 DataSet2[0] = null;
                 DataSet2[1] = null;
             }
@@ -163,6 +165,7 @@ namespace WorkerClass
                 collectionDescription3.HistoricalCollection.listaWorkerPropertys.Add(DataSet3[0].HistoricalCollection.listaWorkerPropertys[0]);
                 collectionDescription3.HistoricalCollection.listaWorkerPropertys.Add(DataSet3[1].HistoricalCollection.listaWorkerPropertys[0]);
                 PristupBazi.DodajUBazu(DeadBand(collectionDescription3));
+                Logger.UpisUBazu(collectionDescription3.DataSet, collectionDescription3.HistoricalCollection.listaWorkerPropertys[0].Code, collectionDescription3.HistoricalCollection.listaWorkerPropertys[1].Code, collectionDescription3.HistoricalCollection.listaWorkerPropertys[0].WorkerValue, collectionDescription3.HistoricalCollection.listaWorkerPropertys[1].WorkerValue);
                 DataSet3[0] = null;
                 DataSet3[1] = null;
             }
@@ -177,6 +180,7 @@ namespace WorkerClass
                 collectionDescription4.HistoricalCollection.listaWorkerPropertys.Add(DataSet4[0].HistoricalCollection.listaWorkerPropertys[0]);
                 collectionDescription4.HistoricalCollection.listaWorkerPropertys.Add(DataSet4[1].HistoricalCollection.listaWorkerPropertys[0]);
                 PristupBazi.DodajUBazu(DeadBand(collectionDescription4));
+                Logger.UpisUBazu(collectionDescription4.DataSet, collectionDescription4.HistoricalCollection.listaWorkerPropertys[0].Code, collectionDescription4.HistoricalCollection.listaWorkerPropertys[1].Code, collectionDescription4.HistoricalCollection.listaWorkerPropertys[0].WorkerValue, collectionDescription4.HistoricalCollection.listaWorkerPropertys[1].WorkerValue);
                 DataSet4[0] = null;
                 DataSet4[1] = null;
             }
@@ -267,7 +271,7 @@ namespace WorkerClass
             return povratni;
         }
        // public void SlanjeReaderu(CollectionDescription cd) { }
-        public static CollectionDescription slanjeWorkeru(DateTime d1, DateTime d2, int id, int code)
+        public CollectionDescription slanjeWorkeru(DateTime d1, DateTime d2, int code)
         {
             int i = 1;
             CollectionDescription povratniZaReadera = new CollectionDescription();

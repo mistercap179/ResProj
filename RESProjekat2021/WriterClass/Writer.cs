@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using LoggerClass;
+using ReaderClass;
+
 
 namespace WriterClass
 {
@@ -16,12 +18,15 @@ namespace WriterClass
         {
              LoadBalancer= new LoadBalancer();
              Logger = new Logger();
+             Reader = new Reader();
         }
         //public PaljenjeGasenje paljenjeGasenje = new PaljenjeGasenje();        // ili u okviru while-a
         public LoadBalancer LoadBalancer;// = new LoadBalancer(); 
         public Logger Logger;
+        public Reader Reader;
         public void Slanje() // thread 1
         {
+            
             int id = 0;
             while (true)
             {
@@ -47,9 +52,9 @@ namespace WriterClass
                     {
                         throw new Exception("Value nije validan!");
                     }
-
+                   // Logger.PorukaWritera(id, code, value);
                     LoadBalancer.PorukaOdWritera(id, code, value);//, paljenjeGasenje.upaljenWorker1, paljenjeGasenje.upaljenWorker2, paljenjeGasenje.upaljenWorker3, paljenjeGasenje.upaljenWorker4);
-                    Logger.PorukaWritera(id, code, value);
+                   
                     id++;
                     
                     Thread.Sleep(2000);     // na svake dvije sekunde 

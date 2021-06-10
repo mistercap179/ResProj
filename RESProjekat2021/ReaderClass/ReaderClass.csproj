@@ -61,14 +61,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataBase\DataBase.csproj">
-      <Project>{00a9d519-9d21-4e59-b5a5-9e3de7f638b4}</Project>
-      <Name>DataBase</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LoadBalancerClass\LoadBalancerClass.csproj">
-      <Project>{fc32d8b4-9348-4de3-aae9-2989a6f09ffa}</Project>
-      <Name>LoadBalancerClass</Name>
-    </ProjectReference>
     <ProjectReference Include="..\LoggerClass\LoggerClass.csproj">
       <Project>{151ca443-c35f-4572-b856-10422b6c4324}</Project>
       <Name>LoggerClass</Name>
@@ -77,17 +69,9 @@
       <Project>{ac328642-4285-4593-86d1-5f9ad18b2e6e}</Project>
       <Name>RESProjekat2021</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Testovi\Testovi.csproj">
-      <Project>{4f6ab6a3-6120-4976-88f0-5ce868fc8c54}</Project>
-      <Name>Testovi</Name>
-    </ProjectReference>
     <ProjectReference Include="..\WorkerClass\WorkerClass.csproj">
       <Project>{c065a36e-2b5c-4208-92bb-8ff5696fe42c}</Project>
       <Name>WorkerClass</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WriterClass\WriterClass.csproj">
-      <Project>{23bc0c15-c7aa-4e67-9ddf-5bfb4b07ac42}</Project>
-      <Name>WriterClass</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
